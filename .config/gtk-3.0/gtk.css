@@ -1,0 +1,7 @@
+.xfce4-panel {
+	border-radius: 50px;
+}
+
+.xfce4-panel.panel-1 .flat {
+	margin: 0px 15px;
+}
