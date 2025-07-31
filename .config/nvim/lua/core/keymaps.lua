@@ -8,15 +8,15 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- File operations
-map("n", "<leader>w", ":w<CR>", opts)          -- Save
-map("n", "<leader>q", ":q<CR>", opts)          -- Quit
-map("n", "<leader>qq", ":q!<CR>", opts)        -- Force quit
-map("n", "<leader>Q", ":qa!<CR>", opts)        -- Force quit all
+map("n", "<leader>w", ":w<CR>", opts) -- Save
+map("n", "<leader>q", ":q<CR>", opts) -- Quit
+map("n", "<leader>qq", ":q!<CR>", opts) -- Force quit
+map("n", "<leader>Q", ":qa!<CR>", opts) -- Force quit all
 
 -- Buffer navigation
 map("n", "<Tab>", ":bnext<CR>", opts)
 map("n", "<S-Tab>", ":bprevious<CR>", opts)
-map("n", "<leader>bd", ":bd<CR>", opts)        -- Close buffer
+map("n", "<leader>bd", ":bd<CR>", opts) -- Close buffer
 
 -- Clear search highlight
 map("n", "<leader>h", ":nohlsearch<CR>", opts)
