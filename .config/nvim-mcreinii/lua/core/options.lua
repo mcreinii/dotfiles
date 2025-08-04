@@ -10,7 +10,7 @@ opt.backup = false -- No backup files
 opt.undofile = true -- Persistent undo
 opt.termguicolors = true -- True color support
 opt.updatetime = 300 -- Faster completion
-opt.timeoutlen = 500 -- Shorter timeout for mapped sequences
+opt.timeoutlen = 1000 -- Shorter timeout for mapped sequences
 
 -- UI
 opt.number = true -- Line numbers

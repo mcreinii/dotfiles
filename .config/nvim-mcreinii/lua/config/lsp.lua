@@ -15,7 +15,7 @@ local on_attach = function(_, bufnr)
 	map("n", "K", vim.lsp.buf.hover, opts)
 	map("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 	map("n", "<leader>rn", vim.lsp.buf.rename, opts)
-	map("n", "<leader>e", vim.diagnostic.open_float, opts)
+	map("n", "<leader>d", vim.diagnostic.open_float, opts)
 	map("n", "[d", vim.diagnostic.goto_prev, opts)
 	map("n", "]d", vim.diagnostic.goto_next, opts)
 end
@@ -32,7 +32,10 @@ mason.setup({
 })
 
 -- 👇 Then setup mason-lspconfig
-mason_lspconfig.setup({})
+mason_lspconfig.setup({
+	automatic_installation = false,
+	handlers = {},
+})
 
 -- 👇 Now it's safe to call setup_handlers
 local servers = mason_lspconfig.get_installed_servers()
